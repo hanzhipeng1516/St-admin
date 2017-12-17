@@ -1,0 +1,27 @@
+{
+  "name": "src",
+  "homepage": "https://github.com/hanzhipeng1516/St-admin",
+  "authors": [
+    "hanzhipeng1516 <421277300@qq.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "angular": "1.2.30",
+    "angular-ui-router": "0.2.12",
+    "angular-animate": "1.2.30",
+    "angular-cookies": "1.2.30",
+    "angular-sanitize": "1.2.30",
+    "oclazyload": "0.5.0",
+    "jquery": "1.9.1",
+    "bootstrap": "3.3.7"
+  }
+}

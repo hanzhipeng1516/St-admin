@@ -1,0 +1,30 @@
+{
+  "name": "st-admin",
+  "version": "1.0.0",
+  "description": "st-admin-Tpl",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:src": "npm install && cd src && bower install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hanzhipeng1516/St-admin.git"
+  },
+  "author": "steven han",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hanzhipeng1516/St-admin/issues"
+  },
+  "homepage": "https://github.com/hanzhipeng1516/St-admin#readme",
+  "devDependencies": {
+    "bower": "^1.8.2",
+    "css-loader": "^0.28.7",
+    "file-loader": "^1.1.6",
+    "gulp": "^3.9.1",
+    "html-webpack-plugin": "^2.30.1",
+    "style-loader": "^0.19.1",
+    "url-loader": "^0.6.2",
+    "webpack": "^3.10.0"
+  }
+}
