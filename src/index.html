@@ -1,14 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="st-admin" id="ng-app">
 <head>
     <meta charset="UTF-8">
     <title>St-Admin</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 </head>
-<body ng-app="st-admin">
-<div ng-controller="mainCtrl">
-    {{text}}
-</div>
+<body>
+<ul class="nav nav-pills">
+    <li role="presentation" class="active"><a href="#">Home</a></li>
+</ul>
+<div ui-view></div>
 </body>
 </html>

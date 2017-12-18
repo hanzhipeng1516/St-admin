@@ -1,0 +1,49 @@
+<div>
+    <!--headerNav start-->
+    <div class="navbar-header">
+        <button class="pull-right visible-xs dk " ui-toggle-class="show" data-target=".navbar-collapse">
+            <i class=" glyphicon glyphicon-cog {{app.theme.headerFontColor}}"></i>
+        </button>
+        <!-- brand -->
+        <div class="navbar-brand text-lt navbar-text hidden-md hidden-sm hidden-lg  {{app.theme.headerFontColor}}">
+            <h4 class="nav navbar-left navbar-nav ">
+                {{app.name}}
+            </h4>
+        </div>
+        <!-- / brand -->
+    </div>
+    <!--headerNav end-->
+    <!--collapse start-->
+    <div class="collapse pos-rlt navbar-collapse box-shadow">
+        <!-- brand -->
+        <div class="navbar-brand text-lt navbar-text no-padding no-margin hidden-xs {{app.theme.headerFontColor}}">
+            <h3 class="nav navbar-left navbar-nav">
+                {{app.name}}
+            </h3>
+        </div>
+        <!-- / brand -->
+        <!-- nabar right -->
+        <ul class="nav navbar-nav navbar-right {{app.theme.headerFontColor}}">
+            <li ng-repeat="nav in navConfig.menu"
+                ui-sref-active="active"
+                ui-sref="{{nav.router_url}}">
+                <a>
+                    <div class="text-center row">
+                        <i class="iconfont {{nav.iconfont}}"></i>
+                    </div>
+                    <span>{{nav.name}}</span>
+                </a>
+            </li>
+            <li class="userPanel">
+                <a>
+                    <p>欢迎 张三 登录，当前{{'3'}}人在线</p>
+                    <div class="text-center row no-margin no-padding">
+                        <i class="iconfont icon-power pull-left" ng-click="logout()">注销</i>
+                        <i class="iconfont icon-out pull-right" ng-click="exit()">登出</i>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!--collapse end-->
+</div>
